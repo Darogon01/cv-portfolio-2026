@@ -1,0 +1,24 @@
+@import url(root.css);
+
+html {
+    font-family: "Fira Code", "Sans Serif", monospace;
+    font-size: 60%;
+/* overflow-x: hidden; */
+}
+body{
+background: var(--bg-color);
+color: var(--text-color);
+}
+.header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+/* padding: 4rem 12% 4rem; */
+background: Orgba(0, 0, 0, 0.3);
+backdrop-filter: blur(10px);
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 5;
+}
