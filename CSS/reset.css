@@ -3,11 +3,26 @@
     ) {
     all: unset;
     display: revert;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
-*::before,
-*::after {
-    display: block;
+body {
+    min-height: 100vh;
+    color: inherit;
+    line-height: 1.5em;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+
 img,
 picture,
 video,
@@ -20,7 +35,6 @@ canvas {
     height: initial;
 }
 a {
-    display: block;
     text-decoration: none;
     color: inherit;
     font: inherit;
@@ -127,14 +141,4 @@ p svg {
     -webkit-user-drag: element;
 }
 
-body {
-    min-height: 100vh;
-    color: inherit;
-    line-height: 1.5em;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    font-smooth: always;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
